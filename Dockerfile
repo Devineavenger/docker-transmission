@@ -10,6 +10,8 @@ LABEL maintainer="aptalca"
 RUN \
  echo "**** install packages ****" && \
  apk add --no-cache \
+	cifs-utils \
+	samba-client \
 	curl \
 	findutils \
 	jq \
@@ -57,7 +59,7 @@ RUN \
  echo "**** cleanup ****" && \
  rm -rf \
 	/tmp/*
-
+ 
 
 # copy local files
 COPY root/ /
