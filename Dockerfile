@@ -12,6 +12,7 @@ RUN \
  apk add --no-cache \
 	cifs-utils \
 	samba-client \
+	nano \
 	curl \
 	findutils \
 	jq \
@@ -50,6 +51,7 @@ RUN \
 	/tmp/twctemp --strip-components=1 && \
  mv /tmp/twctemp/src /transmission-web-control && \
  mkdir -p /kettu && \
+ mkdir -p /downloads/t && \
  curl -o \
 	/tmp/kettu.tar.gz -L \
 	"https://github.com/endor/kettu/archive/master.tar.gz" && \
