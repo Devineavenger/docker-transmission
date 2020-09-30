@@ -11,7 +11,6 @@ RUN \
  echo "**** install packages ****" && \
  apk add --no-cache \
 	cifs-utils \
-	samba-client \
 	nano \
 	curl \
 	findutils \
@@ -70,5 +69,3 @@ COPY root/ /
 # ports and volumes
 EXPOSE 9091 51413
 VOLUME /config /downloads /watch
-
-RUN /config/mount

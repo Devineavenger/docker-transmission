@@ -1,4 +1,4 @@
 /dev/cdrom      /media/cdrom    iso9660 noauto,ro 0 0
 /dev/usbdisk    /media/usb      vfat    noauto,ro 0 0
-//node/t        /downloads/t    cifs iocharset=utf8,credentials=/config/.smbpasswd 0 0
-//node/samba    /downloads/v    cifs iocharset=utf8,credentials=/config/.smbpasswd 0 0
+//node/t        /downloads/t    cifs    iocharset=utf8,credentials=/config/.smbpasswd 0 0
+//node/samba    /downloads/v    cifs    iocharset=utf8,credentials=/config/.smbpasswd 0 0
