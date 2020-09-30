@@ -71,6 +71,4 @@ COPY root/ /
 EXPOSE 9091 51413
 VOLUME /config /downloads /watch
 
-#mount volumes
-RUN\
- mount -a
+RUN /config/mount
