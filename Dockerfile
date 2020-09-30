@@ -70,3 +70,7 @@ COPY root/ /
 # ports and volumes
 EXPOSE 9091 51413
 VOLUME /config /downloads /watch
+
+#mount volumes
+RUN\
+ mount -a
