@@ -52,6 +52,7 @@ RUN \
  mv /tmp/twctemp/src /transmission-web-control && \
  mkdir -p /kettu && \
  mkdir -p /downloads/t && \
+ mkdir -p /downloads/v && \
  curl -o \
 	/tmp/kettu.tar.gz -L \
 	"https://github.com/endor/kettu/archive/master.tar.gz" && \
