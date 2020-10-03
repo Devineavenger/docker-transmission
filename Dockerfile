@@ -70,4 +70,4 @@ COPY root/ /
 EXPOSE 9091 51413
 VOLUME /config /downloads /watch
 
-ENTRYPOINT ["mount", "-a"]
+ENTRYPOINT ["/bin/mount", "-a"]
